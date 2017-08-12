@@ -1,0 +1,74 @@
+@import "../../shared-styles/colors.scss";
+
+.hero-card-overlay {
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero-card-overlay-selected,
+.hero-card-overlay:hover {
+  background-color: transparent;
+}
+
+.hero-card {
+  border: 3px solid black;
+  display: flex;
+  border: 2px solid $secondary;
+  height: 143px;
+  width: 112px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+
+.hero-card-selected {
+  border: 2px solid $primary;
+}
+
+.hero-card-no-border {
+  border: 0px;
+}
+
+.hero-name {
+  color: $primary;
+  border-top: 2px solid $secondary;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  background-color: $background-light;
+  text-align: center;
+  font-size: .8em;
+}
+
+.hero-name-selected {
+  border-top: 2px solid $primary;
+}
+
+@media screen and (min-width: 650px) {
+  .hero-card {
+    height: 252px;
+    width: 168px;
+  }
+
+  .hero-name {
+    font-size: 1em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+  }
+}
+
+@media screen and(min-width: 900px) {
+  .hero-card {
+    width: 211px;
+    height: 319px;
+  }
+
+  .hero-name {
+    font-size: 1.2em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+  }
+}

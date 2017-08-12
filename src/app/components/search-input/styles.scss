@@ -1,0 +1,41 @@
+@import "../../shared-styles/colors.scss";
+:host {
+  position: absolute;
+  top: 72px;
+  left: 61px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media screen and (min-width: 650px) {
+  :host {
+    top: 73px;
+    left: 109px;
+    font-size: 1em;
+  }
+}
+
+@media screen and(min-width: 900px) {
+  :host {
+    top: 69px;
+    left: 67px;
+    font-size: 1.2em;
+  }
+}
+
+input {
+  background-color: $background-light;
+  border: 1px solid $secondary;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  font-size: 1em;
+  padding-left: 8px;
+  margin-right: 8px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid $primary;
+  color: $primary;
+}

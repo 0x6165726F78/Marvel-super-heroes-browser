@@ -1,0 +1,16 @@
+@import '../../shared-styles/colors.scss';
+
+.glyphicon-refresh-animate {
+  -webkit-animation: spin .7s infinite linear;
+  color: $primary;
+  font-size: 1.2em;
+}
+
+@keyframes spin {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}

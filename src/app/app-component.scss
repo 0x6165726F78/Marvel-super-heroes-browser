@@ -1,0 +1,15 @@
+@import "./shared-styles/colors.scss";
+@import "./shared-styles/constants.scss";
+
+nav.navbar {
+  background-color: $background-dark;
+
+  span.navbar-brand {
+    color: $primary;
+    font-size: 1.5em;
+  }
+}
+
+.app-container {
+  padding: $container-padding;
+}

@@ -1,0 +1,21 @@
+@import "../../shared-styles/constants.scss";
+
+.hero-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -$container-padding;
+  margin-right: -$container-padding;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  padding-top: $container-padding;
+}
+
+.loading-container {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
